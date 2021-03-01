@@ -1,0 +1,50 @@
+.menu{
+    padding: 0 10px;
+    .company_signature {
+      .signature{
+        width: 68px;
+      }
+      h2{
+      font-size: 0.9rem;
+    }
+    .bigger_sign{
+      font-size: 1.1rem;
+    }
+    }
+    .menu_section{
+      left: -3%;
+      .navigation_part{
+        padding: 15px;
+        font-size: 1rem;
+         &::after{
+        content: " ";
+        
+        top: 38px;
+      left:8px;
+        width: 117px;
+      }
+      &:nth-of-type(2)::after{
+        width: 75px;
+      left: 12px;
+      
+      }
+      &:nth-of-type(3)::after{
+        left: 8px;
+        width: 182px;
+      }
+      &:nth-of-type(4)::after{
+        width: 50px;
+        left: 10px;
+      
+      }
+      &:nth-of-type(5)::after{
+        width: 65px;
+        left: 11px;
+      
+      }
+      }
+     
+    }
+  }
+  
+

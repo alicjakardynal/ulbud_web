@@ -1,0 +1,30 @@
+.popUp{
+   
+    .popUpImageArea{
+    height: 55%;
+    &.popUpReferences{
+      
+      .popUpImage{
+        width: 90%;
+        left: 19%;
+      }
+    }
+    .img_title {
+    
+      h2{
+        font-size: 1rem;
+      }
+     }
+    }}
+
+    .gallery_container{
+      padding: 80px 10px;
+      &.references{ 
+      
+    img{
+      width: 35% ;
+      padding: 20px;
+     
+    }
+  }
+    }

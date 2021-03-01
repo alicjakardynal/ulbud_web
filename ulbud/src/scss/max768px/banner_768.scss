@@ -1,0 +1,11 @@
+.banner_btn_area{
+    top: 35%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .banner_btn{
+        margin: 20px 0 ;
+      }
+  }

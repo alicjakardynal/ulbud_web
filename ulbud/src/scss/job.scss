@@ -1,0 +1,28 @@
+
+.job_container{
+  height: 70vh;
+  .job_area{
+    background-color:rgb(239, 237, 248);
+    color: black;
+    width: 70%;
+    height: 43%;
+    position: relative;
+    top: 28%;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div{
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0 150px;
+      line-height: 1.5;
+    }
+    p{
+      display: block;
+      
+    }
+ 
+  }
+}

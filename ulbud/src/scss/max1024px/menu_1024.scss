@@ -1,0 +1,36 @@
+.menu{
+    
+    .menu_section{
+      left: -3%;
+      .navigation_part{
+font-size: 0.8rem;
+        padding: 5px;
+        &::after{
+          content: " ";
+          
+          top: 32px;
+        left:-3px;
+          width: 117px;
+        }
+        &:nth-of-type(2)::after{
+          width: 75px;
+        left: 3px;
+        
+        }
+        &:nth-of-type(3)::after{
+          left: 5px;
+          width: 175px;
+        }
+        &:nth-of-type(4)::after{
+          width: 50px;
+          left: 3px;
+        
+        }
+        &:nth-of-type(5)::after{
+          width: 59px;
+          left: 7px;
+        
+        }
+    } 
+      }
+  }

@@ -1,0 +1,33 @@
+.materials{
+    padding: 40px 120px;
+    p{
+        text-align: center;
+        padding-bottom: 35px;
+        font-size: 1.2rem;
+    }
+    .producents{
+        display: flex;
+        @for $i from 1 to 8 {
+            .producents_logo:nth-of-type(#{$i}){
+                background-image: url("../assets/logo-#{$i}.png");
+            }
+        }
+.producents_logo{
+    width: 200px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    &:nth-of-type(2){
+        width: 150px;
+    height: 70px;
+    }
+    &:nth-of-type(4){
+        width: 150px;
+    height: 80px;
+    }
+}
+
+    }
+}

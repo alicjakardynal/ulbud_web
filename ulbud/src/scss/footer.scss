@@ -1,0 +1,52 @@
+.footer{
+    padding: 10px 200px;
+    height: 200px;
+    // width: 100%;
+    //  z-index: 3;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: map-get($colors, text-grey );
+    .company_signature{
+      padding: 20px 10px;
+      .signature{
+         width: 50px;
+      height: 50px;
+      background-repeat: no-repeat;
+      background-position-x: center;padding: 0;
+      }
+    }
+      .signature_title{
+      h2{
+         font-size: 1rem;
+      }     
+    }
+.contact_area{
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+  }
+  .contact_info{
+     display: flex;
+     justify-content: space-between;
+     .info_detail{
+        padding: 15px 20px;
+        i{
+          color: map-get($colors, main-yellow );
+        }
+     }
+   }
+}   
+    p{
+      display: inline-block;
+      padding: 0 5px
+    }
+  }
+  
+  

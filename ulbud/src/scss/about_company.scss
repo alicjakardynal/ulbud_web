@@ -1,0 +1,75 @@
+.about_company {
+  padding: 40px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .text_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 200px;
+    .text_header {
+      display: flex;
+      color: black;
+      position: relative;
+      h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transform: scaleX(0.9);
+        padding-right: 5px;
+      }
+
+      h2:last-of-type {
+        color: map-get($colors, main-yellow);
+      }
+      &::before {
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: map-get($colors, main-yellow);
+        position: absolute;
+        bottom: -15px;
+        left: 28px;
+      }
+    }
+    p {
+      padding: 50px 20px;
+      line-height: 25px;
+      text-align: center;
+    }
+  }
+  .about_text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .what_we_do {
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-bottom: 15px;
+      }
+      li {
+        position: relative;
+        padding: 10px 0;
+        &::before {
+          content: "\2713";
+          color: map-get($colors, main-yellow);
+          font-size: 1.8em;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+        }
+      }
+    }
+  }
+  .about_img {
+    z-index: 1;
+    background-image: url("../assets/f-30444-od-czego-zaczac-tynkowanie-scian.jpg");
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+}

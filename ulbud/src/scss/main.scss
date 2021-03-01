@@ -1,0 +1,104 @@
+@import "./reset.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+@mixin easeOut {
+  transition: all 1s ease-out;
+  };
+  
+  $colors: (
+  main-yellow:  #fcb80b,
+  text-light:white,
+  text-black:black,
+  text-grey: #979797,
+  light-grey:rgb(239, 237, 248)
+
+);
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  
+  // font-family: "Saira Semi Condensed", sans-serif;
+}
+
+@import "./menu.scss";
+@import "./banner.scss";
+@import "./about_company.scss";
+@import"./materials.scss";
+@import "./footer.scss";
+@import "./job.scss";
+@import "./gallery.scss";
+@import "./contact.scss";
+
+@media screen and (max-width: 1250px) {
+  
+  @import "./max1250px/menu_1250.scss";
+  @import "./max1250px/banner_1250.scss";
+  @import "./max1250px/about_company_1250.scss";
+  @import "./max1250px/gallery_1250.scss";
+  @import "./max1250px/contact_1250.scss";
+}
+
+@media screen and (max-width: 1024px) {
+  @import "./max1024px/menu_1024.scss";
+  @import "./max1024px/about_company_1024.scss";
+  @import "./max1024px/gallery_1024.scss";
+  @import "./max1024px/job_1024.scss";
+  @import "./max1024px/contact_1024.scss";
+  @import "./max1024px/footer_1024.scss";
+  @import "./max1024px/banner_1024.scss";
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+  @import "./max768px/menu_768.scss";
+  @import "./max768px/banner_768.scss";
+  @import "./max768px/footer_768.scss";
+  @import './max768px/gallery_768.scss';
+  @import "./max768px/job_768.scss";
+}
+
+@media screen and (max-width: 600px) {
+  @import "./max600px/gallery_600.scss";
+ @import "./max600px/contact_600.scss";
+}
+
+
+@media screen and (max-width: 480px) {
+  @import "./max480px/banner_480.scss";
+  @import "./max480px/about_company_480.scss";
+  @import './max480px/footer_480.scss';
+  @import "./max480px/gallery_480.scss";
+  @import "./max480px/job_480.scss";
+  @import "./max480px/contact_480.scss";
+  .menu{
+    .menu_section{
+
+  
+  .navigation_part{
+padding: 20px;
+ &.references{
+    // font-size: 1rem;
+    text-align: center;
+  }
+  &:nth-of-type(1)::after{
+    top: 80%;
+    left: 5%;
+  
+} 
+    &:nth-of-type(3)::after{
+      top: 80%;
+      width: 140px;
+    
+  } }
+    }
+  }
+ }
+
+
+
+

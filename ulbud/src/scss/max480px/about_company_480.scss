@@ -1,0 +1,39 @@
+.about_company{
+    .text_main{
+      padding: 50px 20px;
+      .text_header{
+        h2{
+          font-size: 2rem;
+        }
+      }
+    }
+    .about_text{
+      width: 100%;
+      position: static;
+      p{
+        font-size: 0.9em;
+        padding: 20px;
+      }
+      h2{
+        font-size: 1.5em;
+      }
+      .what_we_do{
+       padding: 0 30px 10px 30px;
+       &::before{
+        
+        right: 95%;
+      
+      }
+     }
+    }
+    .about_img{
+      display: none;
+    }
+  }
+  .materials{
+    padding: 40px 20px;
+    
+    p{
+      font-size: 1rem;
+    }
+  }

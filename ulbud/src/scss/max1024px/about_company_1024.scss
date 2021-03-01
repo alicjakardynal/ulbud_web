@@ -1,0 +1,29 @@
+
+.about_company{
+    padding: 0;
+    display: block;
+    .text_main{
+padding: 50px 100px;
+    }
+    .about_text{
+  align-items: center;
+        .what_we_do{
+       padding-left: 50px;
+       padding-right: 20px;
+       li{
+         font-size: 0.9rem;
+         &::before{
+         
+         font-size: 1rem;
+       
+       }
+       }
+       
+     }
+    }
+    .about_img{
+      width: 50%;
+      margin-right: 50px;
+      height: 35vh;;
+    }
+  }

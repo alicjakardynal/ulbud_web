@@ -1,0 +1,75 @@
+
+.menu {
+  height: 10vh;
+  display: flex;
+  padding: 0 60px;
+  justify-content: space-between;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  .menu_section {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    left: -6%;
+    .navigation_part {
+      padding: 20px;
+      transition: 0.4s;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: map-get($colors, text-light);
+      letter-spacing: 0.6px;
+      font-weight: 400;
+      font-size: 1.2rem;
+      position: relative;
+      font-family: "Montserrat", serif;
+      &:hover {
+        color: map-get($colors, main-yellow);
+      }
+    }
+  }
+}
+.home_section{
+  .menu{
+    background-color: transparent;
+  }
+  .menu_changed {
+  background-color: #1a1a1a;
+  animation: backgroundcol 1s;
+}
+}
+
+@keyframes backgroundcol {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: #1a1a1a;
+  }
+}
+.company_signature {
+  display: flex;
+  font-family: "Audiowide", cursive;
+  align-items: center;
+  color: map-get($colors, text-light);
+  text-decoration: none;
+
+  .signature {
+    width: 75px;
+    height: 100%;
+    background-image: url("../assets/5f10768752b06-min-yell.png");
+    background-size: contain;
+    display: block;
+    background-position-y: 20%;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+  .bigger_sign {
+    font-size: 1.7rem;
+  }
+}

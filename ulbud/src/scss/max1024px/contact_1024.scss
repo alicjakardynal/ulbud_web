@@ -1,0 +1,20 @@
+.contact_section {
+  flex-direction: column;
+  height: auto;
+  top: 17%;
+  .name_section {
+    h2::before {
+      left: 44%;
+    }
+  }
+  div {
+    padding: 20px;
+
+    div {
+      padding: 0;
+    }
+    &.phone-and-mail {
+      padding: 20px;
+    }
+  }
+}

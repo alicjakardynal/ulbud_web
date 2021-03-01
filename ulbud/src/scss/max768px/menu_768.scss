@@ -1,0 +1,95 @@
+.menu{
+    .menu_btn{
+      position: absolute;
+      
+      right: 65px;
+      top: 24px;
+      cursor: pointer;
+      z-index: 3;
+      @include easeOut
+      .btn_line{
+        width: 28px;
+        height: 3px;
+        margin: 0 0 5px 0;
+        background-color: white;
+        @include easeOut;
+      }
+     
+    } .cross{
+  
+        transform: rotate(180deg);
+        .btn_line{
+          &:nth-child(1){
+            transform: rotate(45deg) translate(5px,5px);
+                }
+          &:nth-child(2){
+              opacity: 0;
+                          }
+          &:nth-child(3){
+            transform: rotate(-45deg) translate(7px,-6px);
+                        }
+        }
+      }
+  .menu_section{
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    background-color: black;
+      height: 100vh;
+      visibility: hidden;
+      opacity: 0.9;
+      left: 0 !important;
+      transform: translate3d(0, 0, 0);
+    // visibility: hidden;
+    transform: translate3d(0,-100%,0);  
+    @include easeOut();
+    .navigation_part{
+      padding: 25px;
+      text-align: center;
+      
+      transform: translate3d(600%,0,0);
+      &::after{
+  top: 48px;
+  left: 9px;
+  width: 140px;
+      }
+      &:nth-of-type(2)::after{
+        left: 11px;
+        width: 100px;
+        
+      
+      }
+      &:nth-of-type(3)::after{
+        left: 21px;
+        
+      
+      }
+      &:nth-of-type(4)::after{
+        left: 8px;
+        width: 73px;
+      
+      }
+      &:nth-of-type(5)::after{
+        left: 16px;
+        width: 73px;
+      }
+    }
+  }.show{
+    
+    visibility: visible;
+   
+    transform: translate3d(0,0,0);
+  .navigation_part{
+    @include easeOut();
+    transform: translate3d(0,0,0);
+  }
+  
+    
+  }
+    }
+    @for $x from 1 through 5 {
+      .navigation_part:nth-of-type(#{$x}){
+        transition-delay:$x * 0.1s !important;
+  
+      }
+    }

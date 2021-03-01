@@ -1,0 +1,9 @@
+.contact_section {
+    flex-direction: column;
+    height: auto;
+    top: 17%;
+    .name_section {
+      h2::before {
+        left: 46%;
+      }
+    }}

@@ -1,0 +1,27 @@
+
+  .contact_section {
+    .name_section {
+      div{
+        flex-direction: column;
+        p{
+          padding: 10px 20px;
+        }
+      }
+      
+    }
+    .contact {
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: 1rem;
+     .contact_form{
+         width: 60%;
+     }
+     .phone-and-mail{
+         width: 80%;
+         flex-direction: row;
+         border: none;
+         justify-content: center;
+     }
+    }
+  }
+  

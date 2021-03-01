@@ -1,6 +1,35 @@
-.contact{
-    font-size: 1rem;
-  h2{
-    font-size: 1.3rem;
+.contact_section {
+ 
+  .name_section { 
+    h2::before{
+    left: 38%;
+    bottom: 17px;
   }
+    div{
+      flex-direction: column;
+      p{
+        padding: 10px 20px;
+      }
+    }
+    
   }
+  .contact {
+   
+    .contact_form{
+      width: 80%;
+    }
+     .phone-and-mail{
+      width: 100%;
+      div{
+        h2{
+          font-size: 1rem;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+      }
+   
+  }
+  
+  }
+}

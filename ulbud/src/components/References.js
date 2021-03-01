@@ -113,6 +113,7 @@ class References extends Component {
             <img
               onClick={() => this.startGallery(image.src, index)}
               src={image.src}
+              key={index}
               className="col"
             ></img>
           ))}

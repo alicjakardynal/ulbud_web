@@ -60,11 +60,12 @@ body {
   @import "./max768px/footer_768.scss";
   @import './max768px/gallery_768.scss';
   @import "./max768px/job_768.scss";
+  @import "./max768px/contact_768.scss";
 }
 
 @media screen and (max-width: 600px) {
   @import "./max600px/gallery_600.scss";
- @import "./max600px/contact_600.scss";
+//  @import "./max600px/contact_600.scss";
 }
 
 
@@ -75,28 +76,8 @@ body {
   @import "./max480px/gallery_480.scss";
   @import "./max480px/job_480.scss";
   @import "./max480px/contact_480.scss";
-  .menu{
-    .menu_section{
-
-  
-  .navigation_part{
-padding: 20px;
- &.references{
-    // font-size: 1rem;
-    text-align: center;
-  }
-  &:nth-of-type(1)::after{
-    top: 80%;
-    left: 5%;
-  
-} 
-    &:nth-of-type(3)::after{
-      top: 80%;
-      width: 140px;
-    
-  } }
-    }
-  }
+  @import "./max480px/menu_480.scss";
+ 
  }
 
 

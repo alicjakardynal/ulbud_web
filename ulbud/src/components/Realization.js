@@ -141,7 +141,7 @@ class Realization extends Component {
               onClick={() => this.startGallery(image.src, image.title, index)}
               src={image.src}
               key={index}
-            
+              alt={image.title}
               className={image.position === "vertical" ? "col vertical" : "col"}
             ></img>
           ))}

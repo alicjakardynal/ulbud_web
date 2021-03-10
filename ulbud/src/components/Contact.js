@@ -39,7 +39,7 @@ class Contact extends Component {
                     ></input>
                   </div>
                   <textarea placeholder="Twoja wiadomość"></textarea>
-                  <input type="submit" value="Wyślij"></input>
+                  <input type="submit" value="Wyślij"  disabled="disabled" ></input>
                 </form>
               </div>
               <div className="phone-and-mail">
